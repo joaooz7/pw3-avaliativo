@@ -1,10 +1,11 @@
+
 <br>
 <section id="formulario">
   <div class="row">
     <div class="col-md-8 mb-4">
       <div class="card mb-4">
         <div class="card-header py-3">
-          <h5 class="mb-0">Biling details</h5>
+          <h5 class="mb-0 mt-3 float-left">Cadastro de viagem</h5>
         </div>
         <div class="card-body">
           <form>
@@ -12,59 +13,46 @@
             <div class="row mb-4">
               <div class="col">
                 <div class="form-outline">
-                  <input type="text" id="form6Example1" class="form-control" />
-                  <label class="form-label" for="form6Example1">First name</label>
+                  <label class="form-label" for="form6Example1">Destino</label>
+                  <input type="text" id="form6Example1" placeholder="Insira seu destino" class="form-control" />
                 </div>
               </div>
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form6Example2" class="form-control" />
-                  <label class="form-label" for="form6Example2">Last name</label>
-                </div>
-              </div>
+
             </div>
 
-            <!-- Text input -->
             <div class="form-outline mb-4">
-              <input type="text" id="form6Example3" class="form-control" />
-              <label class="form-label" for="form6Example3">Company name</label>
+              <label class="form-label" for="form6Example3">Tipo</label>
+              <input type="text" id="form6Example3" placeholder="Insira o tipo da viagem" class="form-control" />
             </div>
 
-            <!-- Text input -->
             <div class="form-outline mb-4">
-              <input type="text" id="form6Example4" class="form-control" />
-              <label class="form-label" for="form6Example4">Address</label>
+              <label class="form-label" for="form6Example3">Data de chegada</label>
+              <input type="date" id="form6Example3" placeholder="Insira a data de chegada" class="form-control" />
             </div>
 
-            <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form6Example5" class="form-control" />
-              <label class="form-label" for="form6Example5">Email</label>
+              <label class="form-label" for="form6Example3">Data de saída</label>
+              <input type="date" id="form6Example3" placeholder="Insira a data de saída" class="form-control" />
             </div>
 
-            <!-- Number input -->
+
             <div class="form-outline mb-4">
-              <input type="number" id="form6Example6" class="form-control" />
-              <label class="form-label" for="form6Example6">Phone</label>
+              <label class="form-label" for="form6Example3">Orçamento</label>
+              <input type="number" format ="currency" precision="2" id="form6Example3" placeholder="Insira o orçamento" class="form-control" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example3">Qtd. Pessoas</label>
+              <input type="text" id="form6Example3" placeholder="Insira a quantidade de pessoas" class="form-control" />
             </div>
 
             <hr class="my-4" />
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="checkoutForm1" />
-              <label class="form-check-label" for="checkoutForm1">
-                Shipping address is the same as my billing address
-              </label>
-            </div>
+            <a class="btn btn-primary mt-2 float-left" style="background-color: darkred;"   [routerLink]="['']"  role="button">Voltar</a>
 
-            <div class="form-check mb-4">
-              <input class="form-check-input" type="checkbox" value="" id="checkoutForm2" checked />
-              <label class="form-check-label" for="checkoutForm2">
-                Save this information for next time
-              </label>
-            </div>
+            <a class="btn btn-primary mt-2 float-right" style="background-color: darkred;"  role="button">Enviar</a>
 
-            <hr class="my-4" />
+
 
 
           </form>
@@ -75,5 +63,3 @@
 
   </div>
 </section>
-<!-- Credit card form -->
-

@@ -1,1 +1,114 @@
-<p>exclui-viagem works!</p>
+
+<div class="alert alert-warning" style="margin-right: 15%; margin-left: 15%; margin-top: 5%; text-align: center; font-weight: 700;" role="alert">
+  Tem certeza que deseja excluir esta viagem?
+</div>
+
+<br>
+<div class="event-schedule-area-two bg-color pad100" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title text-center">
+          <div class="title-text">
+            <br />
+            <h2>Excluir viagem</h2>
+          </div>
+        </div>
+      </div>
+      <!-- /.col end-->
+    </div>
+    <!-- row end-->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade active show" id="home" role="tabpanel">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center" scope="col">Destino</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Data de chegada</th>
+                    <th scope="col">Data de saída</th>
+                    <th scope="col">Orçamento</th>
+                    <th scope="col">Qtd. Pessoas</th>
+                    <th class="text-center" scope="col"></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="inner-box" *ngFor="let e of viagens">
+                    <th scope="row">
+                      <div class="event-date">
+                        <p>{{ e.destino }}</p>
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                        {{ e.tipo }}
+                      </div>
+                    </td>
+                    <td>
+                      <div class="event-wrap">
+                        <h3>
+                          <a style="color: black">{{ e.data_chegada }}</a>
+                        </h3>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="event-wrap">
+                        <h3>
+                          <a style="color: black">{{ e.data_saida }}</a>
+                        </h3>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="event-wrap">
+                        <h3>
+                          <a style="color: black">R$ 4.000,00</a>
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="event-wrap">
+                        <h3>
+                          <a style="color: black">4</a>
+                        </h3>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="primary-btn">
+                        <a
+                          class="btn btn-primary"
+                          href="#"
+                          style="
+                            background-color: darkred;
+                            border-color: darkred;
+                          "
+                          [routerLink]="['']"
+                          >Voltar</a
+                        >
+                        <a
+                          class="btn btn-primary"
+
+                          role="button"
+                          style="background-color: black; border-color: black"
+
+                          >Confirmar</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- /col end-->
+      </div>
+      <!-- /row end-->
+    </div>
+  </div>
+</div>
+
